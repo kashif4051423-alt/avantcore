@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle, TrendingUp } from 'lucide-react';
 import Section from '@/components/ui/Section';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/button';
 
 const industryDetails: Record<string, any> = {
   'banking': {

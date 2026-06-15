@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Search } from 'lucide-react';
 import Section from '@/components/ui/Section';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/button';
 
 // News/Events Images
 const newsImages = [

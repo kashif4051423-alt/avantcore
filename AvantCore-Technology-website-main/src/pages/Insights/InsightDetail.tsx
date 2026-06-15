@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, User, Share2 } from 'lucide-react';
 import Section from '@/components/ui/Section';
-import Button from '@/components/ui/Button';
+import Button from '@/components/ui/button';
 
 const insightDetails: Record<string, any> = {
   'case-studies': {
