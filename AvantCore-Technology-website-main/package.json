@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node optimize-images-now.js && vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "optimize:images": "node scripts/optimize-images.js",
+    "optimize:images": "node optimize-images-now.js",
     "optimize:images:scan": "node scripts/optimize-images.js --scan-only"
   },
   "dependencies": {
