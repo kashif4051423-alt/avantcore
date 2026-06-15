@@ -27,7 +27,13 @@ async function optimizeImage(filePath) {
   try {
     const ext = path.extname(filePath).toLowerCase();
     
-    if (![ '.jpg', '.jpeg', '.png', '.jfif', '.webp'].includes(ext)) {
+    // Skip already processed files and WebP files
+    if (![ '.jpg', '.jpeg', '.png', '.jfif'].includes(ext)) {
+      return;
+    }
+    
+    // Skip temporary files
+    if (filePath.includes('.tmp.')) {
       return;
     }
 
@@ -58,15 +64,21 @@ async function optimizeImage(filePath) {
       .jpeg({ quality: QUALITY, progressive: true })
       .toFile(tempPath);
 
-    // Create WebP version
+    // Create WebP version only if it doesn't exist
     const webpPath = filePath.replace(ext, '.webp');
-    await sharp(filePath)
-      .resize(width, height, {
-        fit: 'inside',
-        withoutEnlargement: true
-      })
-      .webp({ quality: QUALITY })
-      .toFile(webpPath);
+    if (!fs.existsSync(webpPath)) {
+      try {
+        await sharp(filePath)
+          .resize(width, height, {
+            fit: 'inside',
+            withoutEnlargement: true
+          })
+          .webp({ quality: QUALITY })
+          .toFile(webpPath);
+      } catch (webpError) {
+        // Continue even if WebP conversion fails
+      }
+    }
 
     // Replace original with optimized
     fs.unlinkSync(filePath);
