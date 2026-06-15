@@ -1,0 +1,311 @@
+
+/* Import Global Typography System */
+@import './styles/typography.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom animations and utilities */
+@layer utilities {
+  /* Premium Typography Utilities */
+  .typography-display {
+    @apply text-display-lg font-bold leading-tight tracking-tight;
+  }
+
+  .typography-display-sm {
+    @apply text-display-md font-bold leading-snug tracking-compact;
+  }
+
+  .typography-section-title {
+    @apply text-heading-lg font-semibold leading-normal;
+  }
+
+  .typography-subsection {
+    @apply text-heading-md font-semibold leading-relaxed;
+  }
+
+  .typography-body {
+    @apply text-body-lg leading-loose tracking-subtle text-gray-700;
+  }
+
+  .typography-body-secondary {
+    @apply text-body-md leading-relaxed tracking-subtle text-gray-600;
+  }
+
+  .typography-label {
+    @apply text-label-xs font-semibold leading-snug tracking-wider uppercase;
+  }
+
+  /* Section spacing - Enterprise layouts */
+  .section-spacing-compact {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .section-spacing-standard {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .section-spacing-generous {
+    @apply py-20 md:py-32 lg:py-40;
+  }
+
+  .section-spacing-hero {
+    @apply py-24 md:py-40 lg:py-48;
+  }
+
+  /* Element spacing - Consistent vertical rhythm */
+  .spacing-section {
+    @apply mb-6 md:mb-8 lg:mb-10;
+  }
+
+  .spacing-subsection {
+    @apply mb-4 md:mb-6 lg:mb-8;
+  }
+
+  .spacing-group {
+    @apply space-y-4 md:space-y-6;
+  }
+
+  .spacing-tight {
+    @apply space-y-2 md:space-y-3;
+  }
+
+  /* Card spacing - Better internal breathing room */
+  .card-spacing {
+    @apply p-6 md:p-8 lg:p-10;
+  }
+
+  .card-spacing-compact {
+    @apply p-4 md:p-6 lg:p-8;
+  }
+
+  /* Paragraph readability - Optimal measure */
+  .paragraph-readable {
+    @apply max-w-2xl mx-auto;
+  }
+
+  .paragraph-narrow {
+    @apply max-w-xl mx-auto;
+  }
+
+  /* Text hierarchy - Prevent crowding */
+  .text-hierarchy-light {
+    @apply leading-relaxed tracking-subtle;
+  }
+
+  .text-hierarchy-balanced {
+    @apply leading-loose tracking-expanded;
+  }
+
+  .text-hierarchy-dense {
+    @apply leading-snug;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent;
+  }
+
+  .gradient-border {
+    @apply bg-gradient-to-r from-blue-500 to-orange-500 p-0.5 rounded-lg;
+  }
+
+  .gradient-border > * {
+    @apply bg-white rounded-md;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  @apply outline-none ring-2 ring-orange-500 ring-offset-2;
+}
+
+/* Logo button - Clean focus state */
+button[aria-label="AvantCore Technologies Home"]:focus,
+button[aria-label="AvantCore Technologies Home"]:focus-visible {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Search result highlight animation */
+.highlight-result {
+  animation: highlightPulse 2s ease-in-out;
+}
+
+@keyframes highlightPulse {
+  0% {
+    background-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    background-color: transparent;
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+/* Transparent Header Styles */
+header {
+  background-color: transparent !important;
+}
+
+header.bg-transparent {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none;
+  }
+}
