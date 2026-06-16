@@ -30,7 +30,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 select-none transition-all duration-300">
           <img
-            src="/logo-avantcore-clean.svg"
+            src="/logo-avantcore99.webp"
             alt="Avantcore Technologies Logo"
             className={`object-contain transition-all duration-300 ${isScrolled ? 'h-8' : 'h-12'}`}
           />

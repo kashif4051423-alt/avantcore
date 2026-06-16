@@ -160,7 +160,7 @@ const EnhancedHeader = () => {
               style={{ outline: 'none', boxShadow: 'none', WebkitTapHighlightColor: 'transparent' }}
             >
               <img
-                src="/logo-avantcore-clean.svg"
+                src="/logo-avantcore99.webp"
                 alt="AvantCore Technologies"
                 className="object-contain h-8 md:h-9 transition-all duration-300"
               />
