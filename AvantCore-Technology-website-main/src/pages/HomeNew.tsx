@@ -401,7 +401,7 @@ const businessSolutions = [
     title: 'Customer Relationship Management',
     desc: 'Custom CRM solutions to streamline and optimize your customer interactions and sales.',
     link: '/solutions/crm',
-    image: '/Customer%20Relationship%20Management.jpg'
+    image: '/Customer Relationship Management.jpg'
   },
   {
     icon: UserCheck,

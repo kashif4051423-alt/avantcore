@@ -10,25 +10,25 @@ const products = [
     demoLink: 'https://cloudbillingmanager.com/'
   },
   {
-    image: '/hrms&.png',
+    image: '/hrms&.jpg',
     name: 'HRMS & Payroll Solution',
     description: 'HRMS& Payroll Solution, a comprehensive software solution designed to streamline and optimize human resource management and payroll processes with precision and ease. With a user-friendly interface and robust features, our solution simplifies the complexities of HR administration, from employee onboarding and performance management to leave tracking and compliance management. Seamlessly integrated payroll functionalities ensure accurate and timely processing of payroll, including tax calculations, deductions, and direct deposits.',
     demoLink: 'https://cloudbillingmanager.com/'
   },
   {
-    image: '/inventoolyy.png',
+    image: '/inventoolyy.jpg',
     name: 'Inventooly',
     description: 'Introducing Inventooly, your all-in-one Inventory and Purchase Management Solution designed to streamline your supply chain with precision. With an intuitive and user-friendly interface, Inventooly maximizes control and efficiency, empowering you to manage all aspects of your e-commerce platforms and stores seamlessly. From distribution to forecasting, our solution handles it all, providing you with real-time insights and tools to optimize inventory levels, streamline purchasing processes, and meet customer demand effectively. Say goodbye to manual tasks and hello to automated efficiency with Inventooly.',
     demoLink: 'https://cloudbillingmanager.com/'
   },
   {
-    image: '/crm.jpeg',
+    image: '/crm.jpg',
     name: 'Customer Relationship Management',
     description: 'Introducing our CRM (Customer Relationship Management) solution, where our skilled development team excels in creating customized solutions tailored to your unique business needs and processes. Whether you\'re a small startup or a large enterprise, our CRM is designed to streamline and optimize your customer interactions, sales processes, and marketing efforts. With intuitive features and seamless integration capabilities, our CRM empowers you to build stronger relationships with your customers, improve efficiency, and drive business growth. Say goodbye to one-size-fits-all solutions and hello to a CRM that works the way you do.',
     demoLink: 'https://cloudbillingmanager.com/'
   },
   {
-    image: '/pos.png',
+    image: '/pos.jpg',
     name: 'Point of Sale',
     description: 'Introducing Inventooly, your all-in-one Inventory and Purchase  Management Solution designed to streamline your supply chain with precision. With an intuitive and user-friendly interface, Inventooly maximizes control and efficiency, empowering you to manage all aspects of your e-commerce platforms and stores seamlessly. From distribution to forecasting, our solution handles it all, providing you with real-time insights and tools to optimize inventory levels, streamline purchasing processes, and meet customer demand effectively. Say goodbye to manual tasks and hello to automated efficiency with Inventooly.',
     demoLink: 'https://cloudbillingmanager.com/'
