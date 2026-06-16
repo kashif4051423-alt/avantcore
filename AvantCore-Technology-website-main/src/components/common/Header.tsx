@@ -32,7 +32,8 @@ const Header = () => {
           <img
             src="/logo-avantcore99-10-768x154.webp"
             alt="Avantcore Technologies Logo"
-            className={`object-contain transition-all duration-300 ${isScrolled ? 'h-8' : 'h-12'}`}
+            className={`object-contain transition-all duration-300 brightness-0 invert ${isScrolled ? 'h-8' : 'h-12'}`}
+            style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
           />
         </Link>
 
