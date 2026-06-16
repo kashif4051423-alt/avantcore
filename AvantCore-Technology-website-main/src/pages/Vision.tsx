@@ -97,7 +97,7 @@ const VisionPage = () => {
       </motion.section>
 
       {/* Vision Statement */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -148,7 +148,7 @@ const VisionPage = () => {
       </Section>
 
       {/* Vision Pillars - Alternating Layouts */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -216,7 +216,7 @@ const VisionPage = () => {
       </Section>
 
       {/* Strategic Initiatives - Professional Layout */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -261,7 +261,7 @@ const VisionPage = () => {
       </Section>
 
       {/* 5-Year Goals */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -314,7 +314,7 @@ const VisionPage = () => {
       </Section>
 
       {/* CTA Section */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -346,3 +346,4 @@ const VisionPage = () => {
 };
 
 export default VisionPage;
+

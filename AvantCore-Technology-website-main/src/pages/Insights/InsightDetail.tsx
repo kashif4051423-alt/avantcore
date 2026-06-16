@@ -60,7 +60,7 @@ const InsightDetail = () => {
 
   if (!insight) {
     return (
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <div className="text-center max-w-2xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Insight Not Found</h1>
           <p className="text-gray-600 mb-8">The insight you're looking for doesn't exist.</p>
@@ -76,7 +76,7 @@ const InsightDetail = () => {
   if (layout === 'case-studies') {
     return (
       <div className="min-h-screen bg-white">
-        <Section background="gradient" padding="large">
+        <Section background="gradient" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ const InsightDetail = () => {
           </motion.div>
         </Section>
 
-        <Section background="white" padding="large">
+        <Section background="white" spacing="generous">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -118,7 +118,7 @@ const InsightDetail = () => {
         </Section>
 
         {insight.categories && (
-          <Section background="light" padding="large">
+          <Section background="light" spacing="generous">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -144,7 +144,7 @@ const InsightDetail = () => {
           </Section>
         )}
 
-        <Section background="blue-gradient" padding="large">
+        <Section background="blue-gradient" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -168,7 +168,7 @@ const InsightDetail = () => {
   if (layout === 'blog') {
     return (
       <div className="min-h-screen bg-white">
-        <Section background="gradient" padding="large">
+        <Section background="gradient" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -196,7 +196,7 @@ const InsightDetail = () => {
           </motion.div>
         </Section>
 
-        <Section background="white" padding="large">
+        <Section background="white" spacing="generous">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -218,7 +218,7 @@ const InsightDetail = () => {
         </Section>
 
         {insight.categories && (
-          <Section background="light" padding="large">
+          <Section background="light" spacing="generous">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -240,7 +240,7 @@ const InsightDetail = () => {
           </Section>
         )}
 
-        <Section background="blue-gradient" padding="large">
+        <Section background="blue-gradient" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -264,7 +264,7 @@ const InsightDetail = () => {
   if (layout === 'whitepapers') {
     return (
       <div className="min-h-screen bg-white">
-        <Section background="gradient" padding="large">
+        <Section background="gradient" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -282,7 +282,7 @@ const InsightDetail = () => {
           </motion.div>
         </Section>
 
-        <Section background="white" padding="large">
+        <Section background="white" spacing="generous">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -304,7 +304,7 @@ const InsightDetail = () => {
         </Section>
 
         {insight.categories && (
-          <Section background="light" padding="large">
+          <Section background="light" spacing="generous">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -330,7 +330,7 @@ const InsightDetail = () => {
           </Section>
         )}
 
-        <Section background="blue-gradient" padding="large">
+        <Section background="blue-gradient" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -363,7 +363,7 @@ const InsightDetail = () => {
   if (layout === 'newsroom') {
     return (
       <div className="min-h-screen bg-white">
-        <Section background="gradient" padding="large">
+        <Section background="gradient" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -388,7 +388,7 @@ const InsightDetail = () => {
           </motion.div>
         </Section>
 
-        <Section background="white" padding="large">
+        <Section background="white" spacing="generous">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -408,7 +408,7 @@ const InsightDetail = () => {
         </Section>
 
         {insight.categories && (
-          <Section background="light" padding="large">
+          <Section background="light" spacing="generous">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -430,7 +430,7 @@ const InsightDetail = () => {
           </Section>
         )}
 
-        <Section background="blue-gradient" padding="large">
+        <Section background="blue-gradient" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -453,7 +453,7 @@ const InsightDetail = () => {
   // Default layout (fallback)
   return (
     <div className="min-h-screen bg-white">
-      <Section background="gradient" padding="large">
+      <Section background="gradient" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -481,7 +481,7 @@ const InsightDetail = () => {
         </motion.div>
       </Section>
 
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -496,7 +496,7 @@ const InsightDetail = () => {
         </motion.div>
       </Section>
 
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -520,7 +520,7 @@ const InsightDetail = () => {
       </Section>
 
       {insight.categories && (
-        <Section background="light" padding="large">
+        <Section background="light" spacing="generous">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -546,7 +546,7 @@ const InsightDetail = () => {
         </Section>
       )}
 
-      <Section background="blue-gradient" padding="large">
+      <Section background="blue-gradient" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -576,3 +576,4 @@ const InsightDetail = () => {
 };
 
 export default InsightDetail;
+

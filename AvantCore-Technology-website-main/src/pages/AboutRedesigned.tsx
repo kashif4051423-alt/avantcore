@@ -573,3 +573,4 @@ const AboutRedesigned = () => {
 };
 
 export default AboutRedesigned;
+

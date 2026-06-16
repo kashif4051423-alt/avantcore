@@ -265,7 +265,7 @@ const Index = () => {
 
       {/* Featured Article Section */}
       {featuredArticle && (
-        <Section background="white" padding="large">
+        <Section background="white" spacing="generous">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -317,7 +317,7 @@ const Index = () => {
       )}
 
       {/* Category Filter Section */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -363,7 +363,7 @@ const Index = () => {
       </Section>
 
       {/* News Gallery with Modern Cards */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -526,7 +526,7 @@ const Index = () => {
       </AnimatePresence>
 
       {/* Our Team Section */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -559,3 +559,4 @@ const Index = () => {
 };
 
 export default Index;
+

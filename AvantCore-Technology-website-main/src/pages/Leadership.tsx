@@ -90,7 +90,7 @@ const LeadershipPage = () => {
       </motion.section>
 
       {/* Leadership Intro */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ const LeadershipPage = () => {
       </Section>
 
       {/* Leadership Cards */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -175,7 +175,7 @@ const LeadershipPage = () => {
       </Section>
 
       {/* Leadership Values - 2-Column Grid */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -240,7 +240,7 @@ const LeadershipPage = () => {
       </Section>
 
       {/* CTA Section */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -272,3 +272,4 @@ const LeadershipPage = () => {
 };
 
 export default LeadershipPage;
+

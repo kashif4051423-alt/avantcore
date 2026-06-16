@@ -215,7 +215,7 @@ const About = () => {
       </motion.section>
 
       {/* Company Story Section */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -269,7 +269,7 @@ const About = () => {
       </Section>
 
       {/* Company Highlights */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -317,7 +317,7 @@ const About = () => {
       </Section>
 
       {/* Statistics Section */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -346,7 +346,7 @@ const About = () => {
       </Section>
 
       {/* Team Section */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -375,7 +375,7 @@ const About = () => {
       </Section>
 
       {/* Values Section */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -418,7 +418,7 @@ const About = () => {
       </Section>
 
       {/* CTA Section */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -474,3 +474,4 @@ const About = () => {
 };
 
 export default About;
+

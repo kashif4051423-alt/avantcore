@@ -103,7 +103,7 @@ const MissionPage = () => {
       </motion.section>
 
       {/* Mission Statement */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -154,7 +154,7 @@ const MissionPage = () => {
       </Section>
 
       {/* Mission Pillars - Alternating Layout */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -203,7 +203,7 @@ const MissionPage = () => {
       </Section>
 
       {/* Our Commitments - 2-Column Layout */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -250,7 +250,7 @@ const MissionPage = () => {
       </Section>
 
       {/* Impact Metrics */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -290,7 +290,7 @@ const MissionPage = () => {
       </Section>
 
       {/* Living Our Mission */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -344,3 +344,4 @@ const MissionPage = () => {
 };
 
 export default MissionPage;
+

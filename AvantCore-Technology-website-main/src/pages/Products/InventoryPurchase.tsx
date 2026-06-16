@@ -449,3 +449,4 @@ const InventoryPurchase = () => {
 };
 
 export default InventoryPurchase;
+

@@ -60,7 +60,7 @@ const CompanyPage = () => {
       </motion.section>
 
       {/* Company Overview */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -119,7 +119,7 @@ const CompanyPage = () => {
       </Section>
 
       {/* Timeline Section - Company Evolution */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -169,7 +169,7 @@ const CompanyPage = () => {
       </Section>
 
       {/* Capabilities - What Makes Us Different */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -217,7 +217,7 @@ const CompanyPage = () => {
       </Section>
 
       {/* Statistics Section */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -246,7 +246,7 @@ const CompanyPage = () => {
       </Section>
 
       {/* CTA Section */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -302,3 +302,4 @@ const CompanyPage = () => {
 };
 
 export default CompanyPage;
+

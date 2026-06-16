@@ -62,7 +62,7 @@ const NewsEvents = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <Section background="gradient" padding="large">
+      <Section background="gradient" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ const NewsEvents = () => {
       </Section>
 
       {/* Gallery Section */}
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -298,7 +298,7 @@ const NewsEvents = () => {
       </AnimatePresence>
 
       {/* CTA Section */}
-      <Section background="light" padding="large">
+      <Section background="light" spacing="generous">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -327,3 +327,4 @@ const NewsEvents = () => {
 };
 
 export default NewsEvents;
+

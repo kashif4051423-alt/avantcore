@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, CheckCircle, TrendingUp } from 'lucide-react';
@@ -167,7 +166,7 @@ const BankingLayout = ({ industry, navigate }: any) => (
     </div>
 
     {/* Content Section with Image */}
-    <Section background="white" padding="large">
+    <Section background="white" spacing="generous">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -212,7 +211,7 @@ const BankingLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="light" padding="large">
+    <Section background="light" spacing="generous">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -238,7 +237,7 @@ const BankingLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="white" padding="large">
+    <Section background="white" spacing="generous">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
         <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Financial Services Solutions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -259,7 +258,7 @@ const BankingLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="blue-gradient" padding="large">
+    <Section background="blue-gradient" spacing="generous">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -324,7 +323,7 @@ const HealthcareLayout = ({ industry, navigate }: any) => (
     </div>
 
     {/* Content Section with Image */}
-    <Section background="white" padding="large">
+    <Section background="white" spacing="generous">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -363,7 +362,7 @@ const HealthcareLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="light" padding="large">
+    <Section background="light" spacing="generous">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -389,7 +388,7 @@ const HealthcareLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="white" padding="large">
+    <Section background="white" spacing="generous">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
         <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Healthcare Solutions</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -410,7 +409,7 @@ const HealthcareLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="blue-gradient" padding="large">
+    <Section background="blue-gradient" spacing="generous">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -466,7 +465,7 @@ const DefaultLayout = ({ industry, navigate }: any) => (
     </div>
 
     {/* Content Section with Image */}
-    <Section background="white" padding="large">
+    <Section background="white" spacing="generous">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -505,7 +504,7 @@ const DefaultLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="light" padding="large">
+    <Section background="light" spacing="generous">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -531,7 +530,7 @@ const DefaultLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="white" padding="large">
+    <Section background="white" spacing="generous">
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
         <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Key Solutions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -554,7 +553,7 @@ const DefaultLayout = ({ industry, navigate }: any) => (
       </motion.div>
     </Section>
 
-    <Section background="blue-gradient" padding="large">
+    <Section background="blue-gradient" spacing="generous">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -590,7 +589,7 @@ const IndustryDetail = () => {
 
   if (!industry) {
     return (
-      <Section background="white" padding="large">
+      <Section background="white" spacing="generous">
         <div className="text-center max-w-2xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Industry Not Found</h1>
           <p className="text-gray-600 mb-8">The industry you're looking for doesn't exist.</p>
@@ -612,3 +611,5 @@ const IndustryDetail = () => {
 };
 
 export default IndustryDetail;
+
+
