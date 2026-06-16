@@ -5,23 +5,23 @@ import { ArrowLeft, Search } from 'lucide-react';
 import Section from '@/components/ui/Section';
 import Button from '@/components/ui/button';
 
-// News/Events Images
+// News/Events Images with WebP optimization
 const newsImages = [
-  '/newsandevents/latest1.jpg',
-  '/newsandevents/latest2.jpg',
-  '/newsandevents/IMG_1540.jpg',
-  '/newsandevents/IMG_1488.jpg',
-  '/newsandevents/IMG_1535.jpg',
-  '/newsandevents/IMG_1364.jpg',
-  '/newsandevents/IMG_1579.jpg',
-  '/newsandevents/IMG_1564.jpg',
-  '/newsandevents/IMG_1545.jpg',
-  '/newsandevents/IMG_1513.jpg',
-  '/newsandevents/IMG_1504.jpg',
-  '/newsandevents/IMG_1484-Copy.jpg',
-  '/newsandevents/IMG_1481-Copy.jpg',
-  '/newsandevents/after-iftari-party.jpg',
-  '/newsandevents/iftari-party.jpg',
+  { jpg: '/newsandevents/latest1.jpg', webp: '/newsandevents/latest1.webp' },
+  { jpg: '/newsandevents/latest2.jpg', webp: '/newsandevents/latest2.webp' },
+  { jpg: '/newsandevents/IMG_1540.jpg', webp: '/newsandevents/IMG_1540.webp' },
+  { jpg: '/newsandevents/IMG_1488.jpg', webp: '/newsandevents/IMG_1488.webp' },
+  { jpg: '/newsandevents/IMG_1535.jpg', webp: '/newsandevents/IMG_1535.webp' },
+  { jpg: '/newsandevents/IMG_1364.jpg', webp: '/newsandevents/IMG_1364.webp' },
+  { jpg: '/newsandevents/IMG_1579.jpg', webp: '/newsandevents/IMG_1579.webp' },
+  { jpg: '/newsandevents/IMG_1564.jpg', webp: '/newsandevents/IMG_1564.webp' },
+  { jpg: '/newsandevents/IMG_1545.jpg', webp: '/newsandevents/IMG_1545.webp' },
+  { jpg: '/newsandevents/IMG_1513.jpg', webp: '/newsandevents/IMG_1513.webp' },
+  { jpg: '/newsandevents/IMG_1504.jpg', webp: '/newsandevents/IMG_1504.webp' },
+  { jpg: '/newsandevents/IMG_1484-Copy.jpg', webp: '/newsandevents/IMG_1484-Copy.webp' },
+  { jpg: '/newsandevents/IMG_1481-Copy.jpg', webp: '/newsandevents/IMG_1481-Copy.webp' },
+  { jpg: '/newsandevents/after-iftari-party.jpg', webp: '/newsandevents/after-iftari-party.webp' },
+  { jpg: '/newsandevents/iftari-party.jpg', webp: '/newsandevents/iftari-party.webp' },
 ];
 
 const NewsEvents = () => {
@@ -113,7 +113,7 @@ const NewsEvents = () => {
           }}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
-          {newsImages.map((src, idx) => (
+          {newsImages.map((imgSrc, idx) => (
             <motion.div
               key={idx}
               variants={{
@@ -124,14 +124,17 @@ const NewsEvents = () => {
               onClick={() => openModal(idx)}
               className="overflow-hidden rounded-xl shadow-lg group relative cursor-pointer aspect-square"
             >
-              <motion.img
-                src={src}
-                alt={`News Event ${idx + 1}`}
-                className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500"
-                loading="lazy"
-                initial={{ scale: 1 }}
-                whileHover={{ scale: 1.1 }}
-              />
+              <picture>
+                <source srcSet={imgSrc.webp} type="image/webp" />
+                <motion.img
+                  src={imgSrc.jpg}
+                  alt={`News Event ${idx + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-500"
+                  loading="lazy"
+                  initial={{ scale: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                />
+              </picture>
               <motion.div
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: 1 }}
@@ -240,7 +243,8 @@ const NewsEvents = () => {
 
                 <motion.img
                   key={modalIdx}
-                  src={newsImages[modalIdx]}
+                  src={newsImages[modalIdx].jpg}
+                  srcSet={`${newsImages[modalIdx].webp} 1x`}
                   alt={`Full view ${modalIdx + 1}`}
                   className="max-h-[75vh] max-w-[90vw] rounded-lg shadow-2xl border-4 border-white/20 object-contain"
                   loading="lazy"

@@ -285,7 +285,7 @@ const team = [
   {
     name: 'Rana Rizwan Sarwar',
     title: 'Senior Executive',
-    img: '/newsandevents/yamin_virk.jpg',
+    img: '/rana-rizwan-sarwar.jpg',
     linkedin: 'https://www.linkedin.com/in/rana-rizwan-sarwar-55092670'
   }
 ];
