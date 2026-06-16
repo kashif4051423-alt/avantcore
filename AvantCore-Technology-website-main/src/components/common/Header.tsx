@@ -30,10 +30,9 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 select-none transition-all duration-300">
           <img
-            src="/logo-avantcore99-10-768x154.webp"
+            src="/logo-avantcore-clean.svg"
             alt="Avantcore Technologies Logo"
-            className={`object-contain transition-all duration-300 brightness-0 invert ${isScrolled ? 'h-8' : 'h-12'}`}
-            style={{ filter: 'drop-shadow(0 0 0 transparent)' }}
+            className={`object-contain transition-all duration-300 ${isScrolled ? 'h-8' : 'h-12'}`}
           />
         </Link>
 
