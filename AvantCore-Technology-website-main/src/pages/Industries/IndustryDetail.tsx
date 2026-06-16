@@ -70,7 +70,7 @@ const industryDetails: Record<string, any> = {
     title: 'Telecommunications',
     subtitle: 'Next-generation telecom solutions',
     description: 'Enable telecom operators to deliver superior connectivity and customer experiences with advanced technology.',
-    image: '/Telecommunications.jfif',
+    image: '/Telecommunications.jpg',
     benefits: [
       'Network optimization',
       'Customer experience platforms',
@@ -90,7 +90,7 @@ const industryDetails: Record<string, any> = {
     title: 'Public Sector',
     subtitle: 'Citizen-centric digital government',
     description: 'Help government agencies deliver better services through digital transformation and citizen engagement.',
-    image: '/Public Sector.jfif',
+    image: '/Public Sector.jpg',
     benefits: [
       'E-government services',
       'Citizen engagement platforms',
@@ -110,7 +110,7 @@ const industryDetails: Record<string, any> = {
     title: 'Energy & Utilities',
     subtitle: 'Smart energy solutions',
     description: 'Drive sustainability and operational efficiency with IoT, analytics, and smart grid solutions.',
-    image: '/Energy & Utilities.jfif',
+    image: '/Energy & Utilities.jpg',
     benefits: [
       'Smart grid solutions',
       'IoT sensor networks',

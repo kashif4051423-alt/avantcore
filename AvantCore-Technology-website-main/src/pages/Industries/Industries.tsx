@@ -26,19 +26,19 @@ const industriesData = [
     title: 'Telecommunications',
     desc: 'Telecom infrastructure and customer experience solutions.',
     id: 'telecom',
-    image: '/Telecommunications.jfif'
+    image: '/Telecommunications.jpg'
   },
   {
     title: 'Public Sector',
     desc: 'Government and public sector digital transformation services.',
     id: 'public-sector',
-    image: '/Public Sector.jfif'
+    image: '/Public Sector.jpg'
   },
   {
     title: 'Energy & Utilities',
     desc: 'Smart grid and utility management solutions.',
     id: 'energy',
-    image: '/Energy & Utilities.jfif'
+    image: '/Energy & Utilities.jpg'
   },
 ];
 
@@ -52,7 +52,7 @@ const Industries = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         style={{
-          backgroundImage: `url('/Industries We Serve.jfif')`,
+          backgroundImage: `url('/Industries We Serve.jpg')`,
           backgroundAttachment: 'fixed',
           backgroundPosition: 'center',
         }}

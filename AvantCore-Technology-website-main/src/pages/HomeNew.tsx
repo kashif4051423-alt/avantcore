@@ -283,10 +283,10 @@ const team = [
     linkedin: 'https://www.linkedin.com/in/babar-azeem-a28b15176?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   },
   {
-    name: 'Muhammad Dawood Ahmad',
-    title: 'Senior Developer',
-    img: '/newsandevents/dawood.jpg',
-    linkedin: 'https://www.linkedin.com/in/muhammad-dawood-ahmed-developer/'
+    name: 'Rana Rizwan Sarwar',
+    title: 'Senior Executive',
+    img: '/newsandevents/yamin_virk.jpg',
+    linkedin: 'https://www.linkedin.com/in/rana-rizwan-sarwar-55092670'
   }
 ];
 
