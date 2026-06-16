@@ -108,22 +108,45 @@ const Contact = () => {
 
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({
-      fullName: '',
-      email: '',
-      phone: '',
-      company: '',
-      service: '',
-      message: ''
-    });
+    try {
+      const response = await fetch('https://formspree.io/f/mvznyknr', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          service: formData.service,
+          message: formData.message,
+          _replyto: formData.email,
+        }),
+      });
 
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSubmitted(false), 5000);
+      if (response.ok) {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          company: '',
+          service: '',
+          message: ''
+        });
+
+        // Reset success message after 5 seconds
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        setIsSubmitting(false);
+        setErrors({ submit: 'Failed to send message. Please try again.' });
+      }
+    } catch (error) {
+      setIsSubmitting(false);
+      setErrors({ submit: 'An error occurred. Please try again later.' });
+    }
   };
 
   const handleInputChange = (e) => {
@@ -181,6 +204,16 @@ const Contact = () => {
                 >
                   <CheckCircle className="w-5 h-5 text-green-500" />
                   <span className="text-green-700">Thank you! Your message has been sent successfully.</span>
+                </motion.div>
+              )}
+
+              {errors.submit && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6 flex items-center space-x-3"
+                >
+                  <span className="text-red-700">{errors.submit}</span>
                 </motion.div>
               )}
 
