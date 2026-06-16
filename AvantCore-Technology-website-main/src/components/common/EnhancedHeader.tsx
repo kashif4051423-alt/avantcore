@@ -134,9 +134,9 @@ const EnhancedHeader = () => {
         transition={{ duration: 0.1 }}
       />
 
-      {/* Dual-State Navbar */}
+      {/* Pure Black Navbar */}
       <motion.header
-        className="fixed top-0 left-0 right-0 z-40 transition-all duration-500 bg-black shadow-md border-b border-gray-800"
+        className="fixed top-0 left-0 right-0 z-40 transition-all duration-500 bg-black shadow-lg border-b border-black"
       >
         <nav className="w-full px-4 md:px-6 lg:px-8 py-2">
           <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
@@ -173,9 +173,7 @@ const EnhancedHeader = () => {
                 >
                   <Link
                     to={item.href}
-                    className={`px-1 py-1.5 font-medium text-sm flex items-center gap-1 transition-all duration-300 ${
-                      'text-white hover:text-blue-300'
-                    }`}
+                    className="px-1 py-1.5 font-medium text-sm flex items-center gap-1 transition-all duration-300 text-white hover:text-blue-400"
                   >
                     {item.label}
                     {item.hasDropdown && (
@@ -308,10 +306,10 @@ const EnhancedHeader = () => {
 
             {/* Right Navigation */}
             <div className="hidden lg:flex items-center gap-4">
-              <Link to="/career" className={`font-medium text-sm transition-all duration-300 ${'text-white hover:text-blue-300'}`}>
+              <Link to="/career" className="font-medium text-sm transition-all duration-300 text-white hover:text-blue-400">
                 Career
               </Link>
-              <Link to="/news-events" className={`font-medium text-sm transition-all duration-300 ${'text-white hover:text-blue-300'}`}>
+              <Link to="/news-events" className="font-medium text-sm transition-all duration-300 text-white hover:text-blue-400">
                 News & Events
               </Link>
               <SearchBox isNavScrolled={isScrolled} />
@@ -338,9 +336,7 @@ const EnhancedHeader = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className={`fixed top-16 left-0 right-0 z-30 overflow-y-auto max-h-[calc(100vh-64px)] lg:hidden ${
-              isScrolled ? 'bg-white border-b border-gray-200' : 'bg-gray-900/95 backdrop-blur-sm'
-            }`}
+            className="fixed top-16 left-0 right-0 z-30 overflow-y-auto max-h-[calc(100vh-64px)] lg:hidden bg-black border-b border-black"
           >
             <div className="max-w-7xl mx-auto px-4 py-4 space-y-2">
               {navItems.map((item) => (
@@ -349,9 +345,7 @@ const EnhancedHeader = () => {
                     <>
                       <button
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
-                        className={`w-full text-left px-4 py-3 rounded-lg font-medium flex items-center justify-between transition ${
-                          'text-white hover:bg-white/10'
-                        }`}
+                        className="w-full text-left px-4 py-3 rounded-lg font-medium flex items-center justify-between transition text-white hover:bg-white/10 hover:text-blue-400"
                       >
                         {item.label}
                         <ChevronDown size={16} className={`transition-transform ${activeDropdown === item.label ? 'rotate-180' : ''}`} />
@@ -362,7 +356,7 @@ const EnhancedHeader = () => {
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
-                            className={`rounded-lg overflow-hidden ml-2 mt-1 ${isScrolled ? 'bg-gray-50' : 'bg-white/10'}`}
+                            className="rounded-lg overflow-hidden ml-2 mt-1 bg-white/5"
                           >
                             {item.columns.map((column) => (
                               <div key={column.title} className="py-2">
@@ -374,9 +368,7 @@ const EnhancedHeader = () => {
                                     key={subitem.label}
                                     to={subitem.href}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`block px-6 py-2 transition text-sm font-medium ${
-                                      'text-gray-300 hover:text-white hover:bg-white/10'
-                                    }`}
+                                    className="block px-6 py-2 transition text-sm font-medium text-gray-300 hover:text-blue-400 hover:bg-white/5"
                                   >
                                     {subitem.label}
                                   </Link>
@@ -390,9 +382,7 @@ const EnhancedHeader = () => {
                   ) : (
                     <Link
                       to={item.href}
-                      className={`block px-4 py-3 rounded-lg font-medium transition ${
-                        'text-white hover:bg-white/10'
-                      }`}
+                      className="block px-4 py-3 rounded-lg font-medium transition text-white hover:bg-white/10 hover:text-blue-400"
                     >
                       {item.label}
                     </Link>
