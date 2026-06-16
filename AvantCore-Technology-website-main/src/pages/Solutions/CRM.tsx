@@ -49,7 +49,7 @@ const CRM = () => {
   return (
     <div className="min-h-screen pt-20 bg-gradient-to-br from-white via-blue-50 to-white">
       <motion.section className="relative w-full h-96 md:h-[500px] flex items-center justify-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
-        <img src="/Customer%20Relationship%20Management.jfif" alt="CRM" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+        <img src="/Customer%20Relationship%20Management.jpg" alt="CRM" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/70 flex flex-col items-center justify-center text-center px-4">
           <motion.h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" variants={fadeInUp}>Customer Relationship Management</motion.h1>
           <motion.p className="text-xl md:text-2xl text-blue-100 max-w-3xl" variants={fadeInUp}>Streamline customer interactions and build lasting relationships</motion.p>

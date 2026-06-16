@@ -91,7 +91,7 @@ const ERP = () => {
         variants={fadeIn}
       >
         <img 
-          src="/Enterprise%20Resource%20Planning%20%28ERP%29.jfif" 
+          src="/Enterprise%20Resource%20Planning%20%28ERP%29.jpg" 
           alt="Enterprise Resource Planning" 
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"

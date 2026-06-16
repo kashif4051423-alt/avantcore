@@ -466,7 +466,7 @@ const Home = () => {
             >
               <h3 className="text-xl md:text-2xl font-bold text-center mb-6 text-primary">Business Application Solutions</h3>
               <motion.img
-                src="Business_Application_Solutions.jpg"
+                src="/Business_Application_Solutions.jpg"
                 alt="Business Application Solutions"
                 className="w-full max-w-md rounded-2xl shadow-lg object-contain bg-white border border-primary/10"
                 variants={floatY}
@@ -483,7 +483,7 @@ const Home = () => {
             >
               <h3 className="text-xl md:text-2xl font-bold text-center mb-6 text-primary">Technology & Integration Services</h3>
               <motion.img
-                src="Technology_Integration_Services.png"
+                src="/Technology_Integration_Services.jpg"
                 alt="Technology & Integration Services"
                 className="w-full max-w-md rounded-2xl shadow-lg object-contain bg-white border border-primary/10"
                 variants={floatY}

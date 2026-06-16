@@ -81,8 +81,8 @@ const serviceDetails: Record<string, Service> = {
   'data-modernization': {
     title: 'Data Modernization',
     subtitle: 'Unlock Data as a Strategic Asset',
-    heroImage: '/Data Modernization.jfif',
-    contentImage: '/Data Modernization.jfif',
+    heroImage: '/Data Modernization.jpg',
+    contentImage: '/Data Modernization.jpg',
     overview: 'AVANTCORE modernizes enterprise data infrastructures transforming legacy systems into cloud-native platforms. Architected solutions managing petabytes of data for global enterprises.',
     challenges: ['Aging data warehouses becoming bottlenecks', 'Data silos preventing cross-functional insights', 'Escalating infrastructure costs', 'Weeks-long query response times', 'Security and compliance risks', 'Legacy technology talent scarcity'],
     solution: 'Cloud-native data architectures combining data lakes, warehouses, real-time streaming. Phased migrations with parallel systems ensuring business continuity throughout transformation.',
@@ -119,8 +119,8 @@ const serviceDetails: Record<string, Service> = {
   'connected-intelligence': {
     title: 'Connected Intelligence',
     subtitle: 'Unified Data Ecosystem for Enterprise Insights',
-    heroImage: '/Connected Intelligence.jfif',
-    contentImage: '/Connected Intelligence.jfif',
+    heroImage: '/Connected Intelligence.jpg',
+    contentImage: '/Connected Intelligence.jpg',
     overview: 'AVANTCORE builds unified intelligence platforms connecting disparate sources into single sources of truth. Integrated solutions across 50+ business applications for global enterprises.',
     challenges: ['Data fragmented across 20+ incompatible systems', 'Duplicate and conflicting information', 'Weeks to answer basic questions', 'Different departments using different numbers', 'Impossible 360° customer view', 'Poor compliance visibility'],
     solution: 'Composable data architectures integrating through APIs, message queues, ETL. Master data management ensuring consistency. Real-time dashboards accessible across organizational boundaries.',
@@ -157,8 +157,8 @@ const serviceDetails: Record<string, Service> = {
   'generative-ai': {
     title: 'Generative AI Solutions',
     subtitle: 'Enterprise AI Transformation',
-    heroImage: '/Generative AI Solutions.jfif',
-    contentImage: '/Generative AI Solutions.jfif',
+    heroImage: '/Generative AI Solutions.jpg',
+    contentImage: '/Generative AI Solutions.jpg',
     overview: 'AVANTCORE integrates generative AI into enterprise workflows amplifying productivity and automating complex processes. AI solutions generating millions in value across industries.',
     challenges: ['Evaluating legitimate opportunities vs hype', 'Model quality and consistency', 'Data privacy concerns', 'Change management when automating', 'Regulatory AI compliance', 'ROI measurement'],
     solution: 'High-impact AI opportunities aligned with strategy. Responsible AI practices ensuring fairness and compliance. Enterprise AI platform enabling rapid experimentation and safe deployment.',
@@ -195,8 +195,8 @@ const serviceDetails: Record<string, Service> = {
   'cloud-development': {
     title: 'Cloud Development & Integration',
     subtitle: 'Modern Applications for Modern Businesses',
-    heroImage: '/Cloud Development & Integration.jfif',
-    contentImage: '/Cloud Development & Integration.jfif',
+    heroImage: '/Cloud Development & Integration.jpg',
+    contentImage: '/Cloud Development & Integration.jpg',
     overview: 'AVANTCORE builds cloud-native applications from ground up leveraging cloud capabilities. Applications serving millions with sub-100ms response times.',
     challenges: ['Designing for distributed systems', 'Managing microservices complexity', 'Implementing resilience without brittleness', 'Cost control at scale', 'Cloud-native security', 'Operational excellence'],
     solution: 'Cloud-native architectures leveraging containerization, serverless, managed services. Patterns ensuring elastic scaling, automatic failure recovery, cost efficiency.',

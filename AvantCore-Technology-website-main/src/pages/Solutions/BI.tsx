@@ -91,7 +91,7 @@ const BI = () => {
         variants={fadeIn}
       >
         <img 
-          src="/Business%20Intelligence%20%28BI%29%20and%20Analytics_.jfif"
+          src="/Business%20Intelligence%20%28BI%29%20and%20Analytics_.jpg"
           alt="Business Intelligence and Analytics" 
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"

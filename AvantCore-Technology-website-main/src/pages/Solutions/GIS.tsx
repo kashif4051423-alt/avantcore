@@ -91,7 +91,7 @@ const GIS = () => {
         variants={fadeIn}
       >
         <img 
-          src="/geographic%20information%20system%20%28GIS%29.jfif" 
+          src="/geographic%20information%20system%20%28GIS%29.jpg" 
           alt="Geographic Information System" 
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"

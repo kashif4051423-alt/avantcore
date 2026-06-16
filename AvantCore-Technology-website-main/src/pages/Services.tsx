@@ -26,7 +26,7 @@ const services = [
     id: 'data-modernization',
     title: 'Data Modernization',
     desc: `Unlock the power of your data by transforming legacy systems into modern, cloud-native architectures. Our approach reduces complexity, improves performance, and enables real-time insights for data-driven decision making.`,
-    image: '/Data Modernization.jfif',
+    image: '/Data Modernization.jpg',
   },
   {
     id: 'advanced-analytics',
@@ -38,7 +38,7 @@ const services = [
     id: 'connected-intelligence',
     title: 'Connected Intelligence',
     desc: `Break down data silos with unified intelligence platforms. By connecting disparate data sources, we enable cross-functional visibility, faster insights, and consistent decision-making across your entire organization.`,
-    image: '/Connected Intelligence.jfif',
+    image: '/Connected Intelligence.jpg',
   },
   {
     id: 'data-management',
@@ -50,7 +50,7 @@ const services = [
     id: 'generative-ai',
     title: 'Generative AI Solutions',
     desc: `Leverage cutting-edge AI technologies to automate complex processes and enhance decision-making. Our solutions create new revenue opportunities while improving operational efficiency and customer experiences.`,
-    image: '/Generative AI Solutions.jfif',
+    image: '/Generative AI Solutions.jpg',
   },
   {
     id: 'cloud-migration',
@@ -62,7 +62,7 @@ const services = [
     id: 'cloud-development',
     title: 'Cloud Development & Integration',
     desc: `Build cloud-native applications leveraging microservices and containerization. Our development practices ensure scalability, resilience, and optimal performance for cloud-deployed solutions.`,
-    image: '/Cloud Development & Integration.jfif',
+    image: '/Cloud Development & Integration.jpg',
   },
   {
     id: 'managed-services',
@@ -119,7 +119,7 @@ const Services = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         style={{
-          backgroundImage: 'url(/Our%20Services.jfif)',
+          backgroundImage: 'url(/Our%20Services.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -67,7 +67,7 @@ const heroSlides = [
     subtitle: 'Smart inventory tracking',
     description: 'The solution allows you to manage orders from customers/suppliers, including tracking order status and inventory levels.',
     buttonText: 'View Features',
-    backgroundImage: '/imageggg.jfif',
+    backgroundImage: '/imageggg.jpg',
     link: '/products/inventory-purchase'
   }
 ];
@@ -236,7 +236,7 @@ const Team3DCard = ({ member, variants }: any) => {
             <span>View LinkedIn Profile</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </motion.div>
-        </motion.div>
+          </motion.div>
 
         {/* 3D Light effect */}
         <motion.div
@@ -285,49 +285,49 @@ const team = [
   {
     name: 'Muhammad Dawood Ahmad',
     title: 'Senior Developer',
-    img: '/newsandevents/dawood.png',
+    img: '/newsandevents/dawood.jpg',
     linkedin: 'https://www.linkedin.com/in/muhammad-dawood-ahmed-developer/'
   }
 ];
 
 // Technology Stack Logos
 const technologyLogos = [
-  { src: "/apple_logo_1988.webp", alt: "Apple" },
-  { src: "/Node.js_logo_2015.svg_.png", alt: "Node.js" },
-  { src: "/duckdb.png", alt: "DuckDB" },
-  { src: "/Google-flutter-logo.svg_.png", alt: "Flutter" },
-  { src: "/hexagon.jpeg", alt: "Hexagon" },
-  { src: "/postgresql.png", alt: "PostgreSQL" },
-  { src: "/Windows-Logo.png", alt: "Windows 11" },
-  { src: "/Django-Logo.png", alt: "Django" },
-  { src: "/mapbox.png", alt: "Mapbox" },
-  { src: "/OpenLayers-370x206-1.png", alt: "OpenLayers" },
-  { src: "/android.png", alt: "Android" },
-  { src: "/PHP-Logo-PNG-Image.png", alt: "PHP" },
-  { src: "/laravel.png", alt: "Laravel" },
-  { src: "/codigniter.png", alt: "CodeIgniter" },
-  { src: "/Expressjs.png", alt: "Express" },
-  { src: "/angularjs-logo-600x394-1.png", alt: "AngularJS" },
+  { src: "/apple_logo_1988.jpg", alt: "Apple" },
+  { src: "/Node.js_logo_2015.svg_.jpg", alt: "Node.js" },
+  { src: "/duckdb.jpg", alt: "DuckDB" },
+  { src: "/Google-flutter-logo.svg_.jpg", alt: "Flutter" },
+  { src: "/hexagon.jpg", alt: "Hexagon" },
+  { src: "/postgresql.jpg", alt: "PostgreSQL" },
+  { src: "/Windows-Logo.jpg", alt: "Windows 11" },
+  { src: "/Django-Logo.jpg", alt: "Django" },
+  { src: "/mapbox.jpg", alt: "Mapbox" },
+  { src: "/OpenLayers-370x206-1.jpg", alt: "OpenLayers" },
+  { src: "/android.jpg", alt: "Android" },
+  { src: "/PHP-Logo-PNG-Image.jpg", alt: "PHP" },
+  { src: "/laravel.jpg", alt: "Laravel" },
+  { src: "/codigniter.jpg", alt: "CodeIgniter" },
+  { src: "/Expressjs.jpg", alt: "Express" },
+  { src: "/angularjs-logo-600x394-1.jpg", alt: "AngularJS" },
 ];
 
 // Success Stories / Clients
 const successStories = [
-  { src: "/rising_distribution.png", alt: "Rising Distribution" },
-  { src: "/dixy_chicken.png", alt: "Dixy Chicken" },
-  { src: "/agc_pak.png", alt: "AGC Pakistan" },
-  { src: "/riyal_commision.jpeg", alt: "Riyal Commission" },
-  { src: "/punjab_health_foundation.jpeg", alt: "Punjab Health Foundation" },
+  { src: "/rising_distribution.jpg", alt: "Rising Distribution" },
+  { src: "/dixy_chicken.jpg", alt: "Dixy Chicken" },
+  { src: "/agc_pak.jpg", alt: "AGC Pakistan" },
+  { src: "/riyal_commision.jpg", alt: "Riyal Commission" },
+  { src: "/punjab_health_foundation.jpg", alt: "Punjab Health Foundation" },
   { src: "/prime_food_distribution.jpg", alt: "Prime Food Distribution" },
-  { src: "/inventooly.png", alt: "Inventooly" },
-  { src: "/hyundai.png", alt: "Hyundai" },
-  { src: "/aryana_food.jpeg", alt: "Aryana Food" },
-  { src: "/star_food.jpeg", alt: "Star Food" },
-  { src: "/housr.jpeg", alt: "Housr" },
-  { src: "/urtasker.jpeg", alt: "Urtasker" },
-  { src: "/girlzwhosell.jpeg", alt: "GirlzWhoSell" },
-  { src: "/ayan_energy.png", alt: "Ayan Energy" },
+  { src: "/inventooly.jpg", alt: "Inventooly" },
+  { src: "/hyundai.jpg", alt: "Hyundai" },
+  { src: "/aryana_food.jpg", alt: "Aryana Food" },
+  { src: "/star_food.jpg", alt: "Star Food" },
+  { src: "/housr.jpg", alt: "Housr" },
+  { src: "/urtasker.jpg", alt: "Urtasker" },
+  { src: "/girlzwhosell.jpg", alt: "GirlzWhoSell" },
+  { src: "/ayan_energy.jpg", alt: "Ayan Energy" },
   { src: "/cloud_billing_manager.jpg", alt: "Cloud Billing Manager" },
-  { src: "/crm_avantcore.png", alt: "CRM Avantcore" },
+  { src: "/crm_avantcore.jpg", alt: "CRM Avantcore" },
 ];
 
 const serviceFeatures = [
@@ -380,35 +380,35 @@ const businessSolutions = [
     title: 'Enterprise Resource Planning (ERP)',
     desc: 'Cutting-edge ERP solutions to streamline operations, boost productivity, and drive growth.',
     link: '/solutions/erp',
-    image: '/Enterprise%20Resource%20Planning%20%28ERP%29.jfif'
+    image: '/Enterprise%20Resource%20Planning%20%28ERP%29.jpg'
   },
   {
     icon: Map,
     title: 'Geographic Information System (GIS)',
     desc: 'Advanced GIS solutions to harness the power of spatial data for informed decision-making.',
     link: '/solutions/gis',
-    image: '/geographic%20information%20system%20%28GIS%29.jfif'
+    image: '/geographic%20information%20system%20%28GIS%29.jpg'
   },
   {
     icon: BarChart3,
     title: 'Business Intelligence (BI) and Analytics',
     desc: 'State-of-the-art BI and Analytics solutions to convert your data into strategic insights.',
     link: '/solutions/bi',
-    image: '/Business%20Intelligence%20%28BI%29%20and%20Analytics_.jfif'
+    image: '/Business%20Intelligence%20%28BI%29%20and%20Analytics_.jpg'
   },
   {
     icon: Users,
     title: 'Customer Relationship Management',
     desc: 'Custom CRM solutions to streamline and optimize your customer interactions and sales.',
     link: '/solutions/crm',
-    image: '/Customer%20Relationship%20Management.jfif'
+    image: '/Customer%20Relationship%20Management.jpg'
   },
   {
     icon: UserCheck,
     title: 'Human Capital Management (HCM)',
     desc: 'Innovative HCM solutions to optimize workforce management and enhance performance.',
     link: '/solutions/hcm',
-    image: '/Human%20Capital%20Management%20%28HCM%29.jfif'
+    image: '/Human%20Capital%20Management%20%28HCM%29.jpg'
   }
 ];
 
@@ -436,13 +436,13 @@ const services = [
     title: 'Cloud Solutions',
     desc: 'Harness the power of the cloud to enhance flexibility, scalability, and innovation.',
     link: '/services',
-    image: '/Cloud%20Solutions.jfif'
+    image: '/Cloud%20Solutions.jpg'
   },
   {
     title: 'GIS Integration And Solutions',
     desc: 'Seamless integration of GIS technology into your workflows.',
     link: '/services',
-    image: '/GIS%20Integration%20And%20Solutions.jfif'
+    image: '/GIS%20Integration%20And%20Solutions.jpg'
   },
   {
     title: 'Training And Support',
@@ -789,7 +789,7 @@ const HomeNew = () => {
           <motion.div className="relative">
             <div className="aspect-square rounded-lg overflow-hidden shadow-lg">
               <motion.img
-                src="/News & Events - AVANTCORE TECHNOLOGIES_files/Business Transformation.jfif"
+                src="/News & Events - AVANTCORE TECHNOLOGIES_files/Business Transformation.jpg"
                 alt="Business Transformation"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.03 }}
