@@ -136,11 +136,7 @@ const EnhancedHeader = () => {
 
       {/* Dual-State Navbar */}
       <motion.header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-          isScrolled
-            ? 'bg-white shadow-md border-b border-gray-100'
-            : 'bg-transparent border-b border-white/10'
-        }`}
+        className="fixed top-0 left-0 right-0 z-40 transition-all duration-500 bg-black shadow-md border-b border-gray-800"
       >
         <nav className="w-full px-4 md:px-6 lg:px-8 py-2">
           <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
@@ -178,9 +174,7 @@ const EnhancedHeader = () => {
                   <Link
                     to={item.href}
                     className={`px-1 py-1.5 font-medium text-sm flex items-center gap-1 transition-all duration-300 ${
-                      isScrolled
-                        ? 'text-gray-800 hover:text-blue-600'
-                        : 'text-gray-100 hover:text-white'
+                      'text-white hover:text-blue-300'
                     }`}
                   >
                     {item.label}
@@ -314,10 +308,10 @@ const EnhancedHeader = () => {
 
             {/* Right Navigation */}
             <div className="hidden lg:flex items-center gap-4">
-              <Link to="/career" className={`font-medium text-sm transition-all duration-300 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-gray-100 hover:text-white'}`}>
+              <Link to="/career" className={`font-medium text-sm transition-all duration-300 ${'text-white hover:text-blue-300'}`}>
                 Career
               </Link>
-              <Link to="/news-events" className={`font-medium text-sm transition-all duration-300 ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-gray-100 hover:text-white'}`}>
+              <Link to="/news-events" className={`font-medium text-sm transition-all duration-300 ${'text-white hover:text-blue-300'}`}>
                 News & Events
               </Link>
               <SearchBox isNavScrolled={isScrolled} />
@@ -329,7 +323,7 @@ const EnhancedHeader = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`lg:hidden p-2 rounded-lg transition-all ${isScrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-gray-100 hover:bg-white/15'}`}
+              className={`lg:hidden p-2 rounded-lg transition-all ${'text-white hover:bg-white/10'}`}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -356,7 +350,7 @@ const EnhancedHeader = () => {
                       <button
                         onClick={() => setActiveDropdown(activeDropdown === item.label ? null : item.label)}
                         className={`w-full text-left px-4 py-3 rounded-lg font-medium flex items-center justify-between transition ${
-                          isScrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-gray-100 hover:bg-white/10'
+                          'text-white hover:bg-white/10'
                         }`}
                       >
                         {item.label}
@@ -372,7 +366,7 @@ const EnhancedHeader = () => {
                           >
                             {item.columns.map((column) => (
                               <div key={column.title} className="py-2">
-                                <p className={`text-xs uppercase font-semibold px-4 py-2 ${isScrolled ? 'text-gray-500' : 'text-gray-400'}`}>
+                                <p className={`text-xs uppercase font-semibold px-4 py-2 ${'text-gray-300'}`}>
                                   {column.title}
                                 </p>
                                 {column.items.map((subitem) => (
@@ -381,7 +375,7 @@ const EnhancedHeader = () => {
                                     to={subitem.href}
                                     onClick={() => setMobileMenuOpen(false)}
                                     className={`block px-6 py-2 transition text-sm font-medium ${
-                                      isScrolled ? 'text-gray-600 hover:text-blue-900 hover:bg-gray-200' : 'text-gray-300 hover:text-white hover:bg-white/10'
+                                      'text-gray-300 hover:text-white hover:bg-white/10'
                                     }`}
                                   >
                                     {subitem.label}
@@ -397,7 +391,7 @@ const EnhancedHeader = () => {
                     <Link
                       to={item.href}
                       className={`block px-4 py-3 rounded-lg font-medium transition ${
-                        isScrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-gray-100 hover:bg-white/10'
+                        'text-white hover:bg-white/10'
                       }`}
                     >
                       {item.label}
@@ -414,3 +408,8 @@ const EnhancedHeader = () => {
 };
 
 export default EnhancedHeader;
+
+
+
+
+
