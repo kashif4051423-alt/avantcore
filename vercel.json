@@ -1,5 +1,11 @@
 {
   "buildCommand": "cd AvantCore-Technology-website-main && npm run build",
   "outputDirectory": "AvantCore-Technology-website-main/dist",
-  "installCommand": "cd AvantCore-Technology-website-main && npm install"
+  "installCommand": "cd AvantCore-Technology-website-main && npm install",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

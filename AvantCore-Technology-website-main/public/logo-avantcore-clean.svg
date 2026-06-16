@@ -1,25 +1,25 @@
-<svg viewBox="0 0 768 154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-  <!-- Blue gradient -->
+<svg viewBox="0 0 768 154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="768" height="154">
+  <!-- Define the blue gradient for the logo -->
   <defs>
-    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
     </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
   </defs>
   
-  <!-- Logo mark - stylized swoosh/wave -->
-  <g fill="url(#blueGrad)">
-    <!-- Left curve -->
-    <path d="M 40 80 Q 35 60 50 45 Q 65 30 80 35 Q 90 40 85 55 Q 80 70 70 75 Q 55 82 40 80 Z"/>
-    <!-- Right curve -->
-    <path d="M 75 50 Q 90 45 105 55 Q 115 65 110 80 Q 100 95 85 92 Q 75 90 75 75 L 75 50 Z"/>
-    <!-- Center accent -->
-    <circle cx="80" cy="65" r="15" fill="#60a5fa" opacity="0.8"/>
+  <!-- Logo Icon - Stylized wave/swoosh -->
+  <g transform="translate(30, 50)" filter="url(#shadow)">
+    <!-- Main swoosh shape -->
+    <path d="M 0 20 Q 8 5 20 0 Q 28 -2 35 5 Q 40 12 38 25 Q 35 35 25 38 Q 12 40 5 32 Q -2 25 0 20 Z" fill="url(#logoGradient)" stroke="none"/>
+    
+    <!-- Secondary wave for depth -->
+    <path d="M 15 15 Q 22 10 30 12 Q 35 14 34 22 Q 32 28 25 30 Q 18 31 15 25 L 15 15 Z" fill="#60a5fa" opacity="0.8" stroke="none"/>
   </g>
   
-  <!-- Text: AVANTCORE -->
-  <text x="140" y="95" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#1e3a8a" letter-spacing="2">AVANTCORE</text>
-  
-  <!-- Text: TECHNOLOGIES -->
-  <text x="140" y="135" font-family="Arial, sans-serif" font-size="28" font-weight="300" fill="#6b7280" letter-spacing="1">TECHNOLOGIES</text>
+  <!-- Text: AVANTCORE TECHNOLOGIES -->
+  <text x="100" y="100" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="700" fill="#1e40af" letter-spacing="0">AVANTCORE</text>
+  <text x="100" y="145" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="300" fill="#64748b" letter-spacing="1">TECHNOLOGIES</text>
 </svg>
