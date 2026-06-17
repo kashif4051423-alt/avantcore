@@ -123,8 +123,11 @@ const Products = () => {
                     <img 
                       src={product.image} 
                       alt={product.name} 
-                      className="h-full w-full object-contain group-hover:scale-110 transition-transform duration-300 p-4"
+                      className="h-48 w-full object-cover group-hover:scale-110 transition-transform duration-300"
                       loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
                     />
                   </motion.div>
 

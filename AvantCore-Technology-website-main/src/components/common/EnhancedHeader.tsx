@@ -382,6 +382,7 @@ const EnhancedHeader = () => {
                   ) : (
                     <Link
                       to={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="block px-4 py-3 rounded-lg font-medium transition text-white hover:bg-white/10 hover:text-blue-400"
                     >
                       {item.label}
@@ -389,6 +390,34 @@ const EnhancedHeader = () => {
                   )}
                 </div>
               ))}
+
+              {/* Additional Mobile Menu Items */}
+              <div className="border-t border-gray-700 pt-4 mt-4 space-y-2">
+                <Link
+                  to="/career"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-4 py-3 rounded-lg font-medium transition text-white hover:bg-white/10 hover:text-blue-400"
+                >
+                  Career
+                </Link>
+                <Link
+                  to="/news-events"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-4 py-3 rounded-lg font-medium transition text-white hover:bg-white/10 hover:text-blue-400"
+                >
+                  News & Events
+                </Link>
+                <div className="px-4 py-2">
+                  <SearchBox isNavScrolled={isScrolled} />
+                </div>
+                <Link
+                  to="/contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block px-4 py-3 rounded-lg font-medium transition bg-yellow-400 text-gray-900 hover:bg-yellow-500"
+                >
+                  Get in Touch
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}
