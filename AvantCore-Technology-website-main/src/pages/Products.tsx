@@ -67,6 +67,7 @@ const fadeIn = {
 };
 
 const Products = () => {
+  // Force rebuild trigger - Product images fix deployed
   return (
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Banner Area */}
