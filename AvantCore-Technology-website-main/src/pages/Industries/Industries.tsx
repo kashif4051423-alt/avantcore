@@ -16,30 +16,7 @@ const industriesData = [
     id: 'retail',
     image: '/Retail & CPG.jpg'
   },
-  {
-    title: 'Healthcare',
-    desc: 'Healthcare IT solutions for improved patient outcomes and operational efficiency.',
-    id: 'healthcare',
-    image: '/Healthcare.jpg'
-  },
-  {
-    title: 'Telecommunications',
-    desc: 'Telecom infrastructure and customer experience solutions.',
-    id: 'telecom',
-    image: '/Telecommunications.jpg'
-  },
-  {
-    title: 'Public Sector',
-    desc: 'Government and public sector digital transformation services.',
-    id: 'public-sector',
-    image: '/Public Sector.jpg'
-  },
-  {
-    title: 'Energy & Utilities',
-    desc: 'Smart grid and utility management solutions.',
-    id: 'energy',
-    image: '/Energy & Utilities.jpg'
-  },
+ 
 ];
 
 const Industries = () => {

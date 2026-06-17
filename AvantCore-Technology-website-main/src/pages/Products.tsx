@@ -72,14 +72,21 @@ const Products = () => {
     <div className="min-h-screen pt-20 bg-gray-50">
       {/* Banner Area */}
       <motion.section
-        className="relative w-full h-72 md:h-96 flex items-center justify-center"
+        className="relative w-full h-72 md:h-96 flex items-center justify-center bg-gradient-to-br from-blue-900 to-blue-800"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <img src="/our_products.png" alt="Banner" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-blue-900 bg-opacity-70 flex flex-col items-center justify-center text-center">
+        <img 
+          src="/Our Services.jpg" 
+          alt="Banner" 
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+          }}
+        />
+        <div className="absolute inset-0 bg-blue-900 bg-opacity-70 flex flex-col items-center justify-center text-center z-10">
           <motion.h1 className="text-4xl md:text-5xl font-bold text-white mb-4" variants={fadeInUp}>Our Products</motion.h1>
           <motion.h2 className="text-2xl md:text-3xl font-semibold text-white mb-2" variants={fadeInUp}>Elevate Your Experience With Our Products</motion.h2>
         </div>

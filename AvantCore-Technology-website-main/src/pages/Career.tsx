@@ -6,25 +6,25 @@ import { ArrowRight, CheckCircle, Users, Briefcase, Target, X } from 'lucide-rea
 const processSteps = [
   {
     title: 'Application',
-    img: '/career/application.png',
+    img: '/career/application.jpg',
     desc: 'Scroll through the current openings below and submit your application for the position with the required skills set.',
     icon: CheckCircle
   },
   {
     title: 'Screening',
-    img: '/career/screening.png',
+    img: '/career/screening.jpg',
     desc: 'Our Recruitment team will review your application. The expert recruiters at Khaleef will screen your resume and find the best fit for you.',
     icon: Users
   },
   {
     title: 'Assessment',
-    img: '/career/assesment.png',
+    img: '/career/assesment.jpg',
     desc: 'We use multiple assessment techniques to understand your fit to the role and to our culture, values and ways of working.',
     icon: Target
   },
   {
     title: 'Offer',
-    img: '/career/offer.png',
+    img: '/career/offer.jpg',
     desc: 'Once the Assessment process will complete for all "qualified" candidates, our recruitment team will review their insights with the Hiring Manager and choose their preferred candidate.',
     icon: Briefcase
   }
@@ -546,7 +546,7 @@ const Career = () => {
                 {/* Background accent */}
                 <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-500/10 to-blue-600/10 rounded-full group-hover:scale-150 transition-transform duration-300" aria-hidden="true"></div>
 
-                <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div className="relative z-10 flex flex-col gap-6">
                   <div className="flex-1">
                     <div className="flex flex-col md:flex-row md:items-center gap-3 mb-3">
                       <h3 className="text-xl md:text-2xl font-bold text-white">{job.title}</h3>
@@ -567,12 +567,12 @@ const Career = () => {
                     </div>
                   </div>
 
-                  <div className="flex-shrink-0 flex gap-3">
+                  <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                     <motion.button
                       whileHover={{ scale: 1.08 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={() => setSelectedJob(job.id)}
-                      className="bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600 text-white font-bold px-6 py-3 rounded-lg shadow-lg transition-all duration-300 transform inline-flex items-center gap-2 whitespace-nowrap"
+                      className="bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600 text-white font-bold px-6 py-3 rounded-lg shadow-lg transition-all duration-300 transform inline-flex items-center justify-center gap-2 flex-1 sm:flex-none"
                     >
                       View Details <ArrowRight size={16} />
                     </motion.button>
@@ -581,7 +581,7 @@ const Career = () => {
                       whileHover={{ scale: 1.08 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={() => navigate(`/career/${job.id}`)}
-                      className="flex-shrink-0 bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300 transform inline-flex items-center gap-2 whitespace-nowrap"
+                      className="bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition-all duration-300 transform inline-flex items-center justify-center gap-2 flex-1 sm:flex-none"
                     >
                       Apply Now <ArrowRight size={18} />
                     </motion.button>
