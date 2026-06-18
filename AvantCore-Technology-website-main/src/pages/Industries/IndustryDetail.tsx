@@ -65,66 +65,7 @@ const industryDetails: Record<string, any> = {
     ],
     layout: 'healthcare',
   },
-  'telecom': {
-    title: 'Telecommunications',
-    subtitle: 'Next-generation telecom solutions',
-    description: 'Enable telecom operators to deliver superior connectivity and customer experiences with advanced technology.',
-    image: '/Telecommunications.jpg',
-    benefits: [
-      'Network optimization',
-      'Customer experience platforms',
-      '5G enablement',
-      'IoT solutions',
-      'Billing automation',
-      'Network analytics',
-    ],
-    stats: [
-      { label: 'Telecom Partners', value: '14+' },
-      { label: 'Network Upgrades', value: '35+' },
-      { label: 'Subscriber Growth', value: '8%+' },
-    ],
-    layout: 'default',
-  },
-  'public-sector': {
-    title: 'Public Sector',
-    subtitle: 'Citizen-centric digital government',
-    description: 'Help government agencies deliver better services through digital transformation and citizen engagement.',
-    image: '/Public Sector.jpg',
-    benefits: [
-      'E-government services',
-      'Citizen engagement platforms',
-      'Process digitization',
-      'Data-driven governance',
-      'Cybersecurity solutions',
-      'Open data platforms',
-    ],
-    stats: [
-      { label: 'Government Agencies', value: '16+' },
-      { label: 'Citizens Impacted', value: '5M+' },
-      { label: 'Service Efficiency', value: '20%+' },
-    ],
-    layout: 'default',
-  },
-  'energy': {
-    title: 'Energy & Utilities',
-    subtitle: 'Smart energy solutions',
-    description: 'Drive sustainability and operational efficiency with IoT, analytics, and smart grid solutions.',
-    image: '/Energy & Utilities.jpg',
-    benefits: [
-      'Smart grid solutions',
-      'IoT sensor networks',
-      'Energy management systems',
-      'Predictive maintenance',
-      'Carbon tracking',
-      'Renewable integration',
-    ],
-    stats: [
-      { label: 'Projects Delivered', value: '15+' },
-      { label: 'Enterprise Clients', value: '25+' },
-      { label: 'Efficiency Improvement', value: '10%+' },
-    ],
-    layout: 'default',
-  },
+
 };
 
 // Banking-specific layout

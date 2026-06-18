@@ -16,7 +16,12 @@ const industriesData = [
     id: 'retail',
     image: '/Retail & CPG.jpg'
   },
- 
+  {
+    title: 'Healthcare',
+    desc: 'Healthcare IT solutions for improved patient outcomes and operational efficiency.',
+    id: 'healthcare',
+    image: '/Healthcare.jpg'
+  },
 ];
 
 const Industries = () => {
